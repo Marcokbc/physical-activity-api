@@ -1,7 +1,7 @@
 const Hapi = require("@hapi/hapi");
-const { swaggerPlugin, swaggerDependencies } = require("./src/plugins/swagger")
-const authRoutes = require("./src/routes/authRoute");
-const exercisesRoutes = require("./src/routes/physicalActivitiesRoute");
+const { swaggerPlugin, swaggerDependencies } = require("./plugins/swagger")
+const authRoutes = require("./routes/authRoute");
+const exercisesRoutes = require("./routes/physicalActivitiesRoute");
 
 async function start() {
   const server = Hapi.server({
